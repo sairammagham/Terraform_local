@@ -4,7 +4,7 @@ resource "aws_instance" "my_ec2_instance" {
   instance_type = "t2.micro"               # Instance type (t2.micro is eligible for free tier)
 
   # Key pair for SSH access (you need to have a key pair created in AWS)
-  key_name = "SivaKey"
+  key_name = "firstkey"
 
   tags = {
     Name = "MyEC2Instance-${count.index}"
